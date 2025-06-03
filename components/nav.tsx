@@ -76,7 +76,9 @@ export function Navigation() {
             Se connecter
           </Link>
           <Button asChild className="transition-colors duration-200">
-            <Link href="/#pricing">Commencer</Link>
+            <Link href="#pricing" onClick={(e) => handleClick(e, "pricing")}>
+              Commencer
+            </Link>
           </Button>
         </div>
 
@@ -129,7 +131,12 @@ export function Navigation() {
                   Se connecter
                 </Link>
                 <Button asChild className="w-full mt-2">
-                  <Link href="/#pricing">Commencer</Link>
+                  <Link
+                    href="#pricing"
+                    onClick={(e) => handleClick(e, "pricing")}
+                  >
+                    Commencer
+                  </Link>
                 </Button>
               </div>
             </div>
